@@ -32,5 +32,15 @@ ul {
     flex-direction: row;
 
   }
+  .carritoBolsa{
+   background-color: #ff0000;
+  }
+
+  .carrito {
+    
+    width: 20px;
+    height: 20px;
+
+  }
 
 
