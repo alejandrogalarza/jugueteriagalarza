@@ -10,7 +10,7 @@ const NavBar = ()=> {
 	</header>
 	<nav>
         <ul>
-            <CartWidget carrito = {"1"}/>
+            <CartWidget carrito = {1}/>
             <li className="menuLeft"><a href="#logo">JuegueteriaGalarza</a></li>
             <li className="menuRight"><a href="#menuContact">contact</a></li>
             <li className="menuRight"><a href="#menuCatalogo">catalogo</a></li>
