@@ -6,13 +6,17 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import './index.css';
 
 const App = ()=> {
+    
     return (
     <>
+    
         <BrowserRouter>
+        
             <NavBar/>
             <main>
             <Routes>
-                <Route exact path="/" element={<ItemListContainer />}/>
+                <Route exact path="/" element={<ItemListContainer/>}/>
+                <Route exact path="/categoria/:tipo" element={<ItemListContainer/>}/>
                 <Route exact path="/item/:id" element={<ItemDetailContainer />}/>
             </Routes>
             </main>

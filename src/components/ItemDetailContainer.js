@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ItemList from './ItemList'; 
+import ItemDetail from './ItemDetail'; 
 import Cargando from './Cargando';
 import { useParams } from "react-router-dom";
 const statusType = {load:1,succes:2,error:3};
@@ -42,12 +42,12 @@ const ItemDetailContainer = ()=> {
             return (
             <>
                 <div className="itemListContainer">
-                    <ItemList items={[item]} />           
+                    <ItemDetail item={item} />           
                 </div>
             </>
             );
         default:
-            return (<>ni idea..</>);
+            return (<>fuera de la opcion..</>);
 
     }
 }

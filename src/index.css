@@ -165,3 +165,27 @@ ul {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+.textoDetalle{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(5%, -59%);
+  background-color: rgba(255,255,255,0.7);
+  color: #096abe;
+  width: 90%;
+
+}
+.fondoDetalle{
+  width: 100%;
+  height: 91vh;
+}
+.contenedorDetalle{
+height: 50%;
+}
+.titleDetalle{
+  text-align: center;
+  background-color: honeydew;
+  color: currentColor;
+}
