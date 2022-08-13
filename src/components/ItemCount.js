@@ -15,7 +15,10 @@ const ItemCount = ({stock,initial, onAdd})=> {
     }
     const agregarCantidad = ()=>{
         if(contador <= stock){
-            onAdd(contador)
+            onAdd(contador);
+            setContador(0)
+
+            // navegar a /cart
         }else{
             console.log("stock no disponible")
         }
@@ -26,8 +29,9 @@ const ItemCount = ({stock,initial, onAdd})=> {
         <div className="itemCount">
 
             <div className="itemCount__contador">
+                <p>Stock Actual {stock}</p>
                 <button   onClick={menosUno}>restar uno </button>
-                    <h3>{contador}</h3>
+                <h2>{contador}</h2>
                 <button   onClick={masUno}>sumar uno</button>
             </div>
             <button onClick={agregarCantidad}>Agregar cantidad</button>
