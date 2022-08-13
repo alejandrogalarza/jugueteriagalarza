@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ItemCount from './ItemCount'; 
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({item})=> {
 
@@ -10,7 +11,7 @@ const ItemDetail = ({item})=> {
     setStock(stock-cantidad);
     setCantidadComprar(cantidadComprar+cantidad);
   }
-  
+
   return (
   
         <div className="contenedorDetalle">        
@@ -25,7 +26,14 @@ const ItemDetail = ({item})=> {
           <p>{item.description}</p>
           <h2>Cantidad Entradas Cine :{cantidadComprar}</h2>
           <ItemCount stock={stock} initial={1} onAdd={compra}/>
-
+          {
+            (cantidadComprar!==0)?
+            (<Link to="/cart">
+                <button >
+                    <h3>Comprar {cantidadComprar} Entradas</h3>
+                </button>
+            </Link>):''
+          }
         </div>
 
         </div>
